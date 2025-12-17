@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+:root{
+    --cprimary : #93e2ff;
+    --csecond : #AF22C7;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100vw;
+    z-index: 99;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn-custom{
+    background: var(--cprimary);
+    color: white;
+}
+.btn-custom:hover{
+    background-color: darkmagenta;
+}
+.footer{
+    background-color: var(--csecond);
+}
+.img-scale{
+    overflow: hidden;
+    position: relative
+}
+.img-scale img{
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.61, 0, 0.52, 1.01);
+    
+}
+
+.img-scale:hover img{
+    transform: scale(1.1);
+    filter: grayscale(1) blur(2px);
+}
+
+.img-scale:after{
+    opacity: 0;
+    content:"somethign";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+    transition-duration: 1s;
+    
+}
+.img-scale:hover:after{
+    opacity: 1
+}
+
+
+
